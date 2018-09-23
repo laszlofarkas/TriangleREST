@@ -7,7 +7,7 @@ import javax.validation.Payload;
 import java.lang.annotation.*;
 
 /**
- * Validate whether all sides of the triangle are less than the other two side
+ * Validator annotation for check whether all sides of the triangle are less than the other two side
  */
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)

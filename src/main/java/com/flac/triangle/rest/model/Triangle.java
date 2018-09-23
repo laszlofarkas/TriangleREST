@@ -8,35 +8,35 @@ import javax.validation.constraints.Positive;
 public class Triangle {
 
     @Positive
-    private Double a;
+    private double a;
 
     @Positive
-    private Double b;
+    private double b;
 
     @Positive
-    private Double c;
+    private double c;
 
-    public Double getA() {
+    public double getA() {
         return a;
     }
 
-    public void setA(Double a) {
+    public void setA(double a) {
         this.a = a;
     }
 
-    public Double getB() {
+    public double getB() {
         return b;
     }
 
-    public void setB(Double b) {
+    public void setB(double b) {
         this.b = b;
     }
 
-    public Double getC() {
+    public double getC() {
         return c;
     }
 
-    public void setC(Double c) {
+    public void setC(double c) {
         this.c = c;
     }
 }
