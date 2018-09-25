@@ -18,7 +18,7 @@ public class TriangleSideValidator implements ConstraintValidator<TriangleSideCo
     @Override
     public boolean isValid(Triangle triangle, ConstraintValidatorContext constraintValidatorContext) {
         return (triangle.getA() < triangle.getB() + triangle.getC()) &&
-                (triangle.getB() < triangle.getA() + triangle.getC()) &&
-                (triangle.getC() < triangle.getA() + triangle.getB());
+            (triangle.getB() < triangle.getA() + triangle.getC()) &&
+            (triangle.getC() < triangle.getA() + triangle.getB());
     }
 }

@@ -15,6 +15,8 @@ import java.lang.annotation.*;
 @Constraint(validatedBy = TriangleSideValidator.class)
 public @interface TriangleSideConstraint {
     String message() default "All sides of the triangle should be less then the sum of other two sides";
+
     Class<?>[] groups() default {};
+
     Class<? extends Payload>[] payload() default {};
 }
