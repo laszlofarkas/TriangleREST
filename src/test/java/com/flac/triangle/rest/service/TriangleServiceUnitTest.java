@@ -2,7 +2,6 @@ package com.flac.triangle.rest.service;
 
 import com.flac.triangle.rest.model.Triangle;
 import com.flac.triangle.rest.model.TriangleType;
-import org.assertj.core.api.Assertions;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

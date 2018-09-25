@@ -14,16 +14,15 @@ public class TriangleService {
      * @return type of the given triangle
      */
     public TriangleType getTriangleType(Triangle triangle) {
-        if (triangle.getA() == triangle.getB()) {
-            if (triangle.getA() == triangle.getC()) {
-                return TriangleType.EQUILATERAL;
-            } else {
-                return TriangleType.ISOSCELES;
-            }
+        // all sides are equal
+        if (triangle.getA() == triangle.getB() && triangle.getA() == triangle.getC()) {
+            return TriangleType.EQUILATERAL;
         }
-        if (triangle.getA() == triangle.getC() || triangle.getB() == triangle.getC()) {
+        // two of sides are equal
+        if (triangle.getA() == triangle.getB() || triangle.getA() == triangle.getC() || triangle.getB() == triangle.getC()) {
             return TriangleType.ISOSCELES;
         }
+        // all sides are different
         return TriangleType.SCALENE;
     }
 }
